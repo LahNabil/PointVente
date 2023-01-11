@@ -540,6 +540,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox2">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox2ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner2">
                       <AuxValues>
@@ -659,6 +662,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox3">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox3ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner3">
                       <AuxValues>
@@ -778,6 +784,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox4">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox4ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner4">
                     </Component>
@@ -894,6 +903,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox5">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox5ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner5">
                     </Component>
@@ -1129,6 +1141,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox7">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox7ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner7">
                     </Component>
@@ -1245,6 +1260,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox8">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox8ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner8">
                     </Component>
@@ -1366,6 +1384,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox9">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox9ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner9">
                     </Component>
@@ -1486,6 +1507,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox11">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox11ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner11">
                     </Component>
@@ -1606,6 +1630,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox12">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox12ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner12">
                     </Component>
@@ -1722,6 +1749,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox13">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox13ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner13">
                     </Component>
@@ -1845,6 +1875,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox10">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox10ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner10">
                     </Component>
@@ -1965,6 +1998,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox14">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox14ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner14">
                     </Component>
@@ -2086,6 +2122,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox15">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox15ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner15">
                     </Component>
