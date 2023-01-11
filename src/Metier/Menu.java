@@ -37,6 +37,7 @@ public class Menu extends javax.swing.JFrame {
     
     public Menu() {
         initComponents();
+        
         worklbl.setText(dateStr);
         timeFormat = new SimpleDateFormat("HH:mm:ss");
         heure.setText(timeFormat.format(Calendar.getInstance().getTime()));
@@ -1637,6 +1638,11 @@ public class Menu extends javax.swing.JFrame {
 
         subTF.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         subTF.setText("0.0");
+        subTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subTFActionPerformed(evt);
+            }
+        });
 
         jTextField3.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jTextField3.setText("0.0");
@@ -1794,6 +1800,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 8;
+        total += price;
+        subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item1.getText()+"\t\t"+price+"\n");
         }else {
             jCheckBox1.setSelected(false);
@@ -1810,6 +1818,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 12;
+        total +=price;
+        subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item6.getText()+"\t\t\t"+price+"\n");
         }else {
             jCheckBox6.setSelected(false);
@@ -1826,6 +1836,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 10;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item2.getText()+"\t\t"+price+"\n");
         }else {
             jCheckBox2.setSelected(false);
@@ -1841,6 +1853,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 10;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item3.getText()+"\t\t\t"+price+"\n");
         }else {
             jCheckBox3.setSelected(false);
@@ -1856,6 +1870,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 12;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item4.getText()+"\t\t"+price+"\n");
         }else {
             jCheckBox4.setSelected(false);
@@ -1871,6 +1887,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 10;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item5.getText()+"\t\t\t"+price+"\n");
         }else {
             jCheckBox5.setSelected(false);
@@ -1886,6 +1904,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 12;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item7.getText()+"\t\t\t"+price+"\n");
         }else {
             jCheckBox7.setSelected(false);
@@ -1901,6 +1921,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 12;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item8.getText()+"\t\t\t"+price+"\n");
         }else {
             jCheckBox8.setSelected(false);
@@ -1916,6 +1938,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 10;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item9.getText()+"\t\t\t"+price+"\n");
         }else {
             jCheckBox9.setSelected(false);
@@ -1931,6 +1955,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 12;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item10.getText()+"\t\t\t"+price+"\n");
         }else {
             jCheckBox10.setSelected(false);
@@ -1946,6 +1972,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 10;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item11.getText()+"\t\t"+price+"\n");
         }else {
             jCheckBox11.setSelected(false);
@@ -1961,6 +1989,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 12;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item12.getText()+"\t\t"+price+"\n");
         }else {
             jCheckBox12.setSelected(false);
@@ -1976,6 +2006,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 15;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item13.getText()+"\t\t\t"+price+"\n");
         }else {
             jCheckBox13.setSelected(false);
@@ -1991,6 +2023,8 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 10;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item14.getText()+"\t\t"+price+"\n");
         }else {
             jCheckBox14.setSelected(false);
@@ -2006,11 +2040,17 @@ public class Menu extends javax.swing.JFrame {
             NN();
         }
         double price = qty * 10;
+         total +=price;
+         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item15.getText()+"\t\t"+price+"\n");
         }else {
             jCheckBox15.setSelected(false);
         }
     }//GEN-LAST:event_jCheckBox15ActionPerformed
+
+    private void subTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_subTFActionPerformed
 
    
 
