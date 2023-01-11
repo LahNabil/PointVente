@@ -15,7 +15,7 @@ public class Main {
          Loading load = new Loading();
          load.setVisible(true);
          load.setLocationRelativeTo(null);
-          Authentification auth = new Authentification();
+         Authentification auth = new Authentification();
                
    
                 try{
