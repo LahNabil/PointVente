@@ -191,7 +191,7 @@ public class Menu extends javax.swing.JFrame {
     public void NN(){
                  jTextArea1.setText("********************* N&N Cafe ************************\n"
                 
-                + "Heure :"+heure.getText()+"  Date :"+worklbl.getText()+"\n"
+                + "\t Heure :"+heure.getText()+"  Date :"+worklbl.getText()+"\n"
                 + "*******************************************************\n "
                 + "Contactez-nous : lahlalia.nabil@hotmail.com  \n "
                         + "hnizilnouhayla@gmail.com\n"
@@ -2094,7 +2094,7 @@ public class Menu extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Please select atleast one Item");
         }else {
             jTextArea1.setText(jTextArea1.getText()
-                    +"*******************************************************\n "
+                    +"\n\n\n*******************************************************\n "
                     +"Tax : \t\t"+tax+"\n"
                     +"Sub Total :\t\t"+total+"\n"
                     +"Total : \t\t"+(total+tax)+"\n\n"
