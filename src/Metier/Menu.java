@@ -30,6 +30,8 @@ public class Menu extends javax.swing.JFrame {
     Calendar cal = Calendar.getInstance();
     private SimpleDateFormat timeFormat;
     public Timer timer;
+    private double total = 0.0;
+    private int x = 0;
     
     
     
@@ -54,7 +56,7 @@ public class Menu extends javax.swing.JFrame {
         if(Integer.parseInt(jSpinner1.getValue().toString())==0){
             JOptionPane.showMessageDialog(null,"Please increase the item quantity");
             jCheckBox1.setSelected(false);
-            c =1;
+            c =-1;
         }
         return c;
     }
@@ -65,7 +67,8 @@ public class Menu extends javax.swing.JFrame {
                 + "*******************************************************\n "
                 + "Contactez-nous : lahlalia.nabil@hotmail.com  \n "
                         + "hnizilnouhayla@gmail.com\n"
-                + "*******************************************************");
+                + "*******************************************************\n"
+                + "Item Name :\t\t\t"+"Price(DH)\n");
                                                                                              
                                                                     
                                
@@ -110,6 +113,7 @@ public class Menu extends javax.swing.JFrame {
         jCheckBox13.setSelected(false);
         jCheckBox14.setSelected(false);
         jCheckBox15.setSelected(false);
+        x=0;
         
     }
 
@@ -135,7 +139,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        item1 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
         jSpinner1 = new javax.swing.JSpinner();
@@ -144,7 +148,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
+        item2 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jCheckBox2 = new javax.swing.JCheckBox();
         jSpinner2 = new javax.swing.JSpinner();
@@ -153,7 +157,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
+        item3 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jCheckBox3 = new javax.swing.JCheckBox();
         jSpinner3 = new javax.swing.JSpinner();
@@ -162,7 +166,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
+        item4 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jCheckBox4 = new javax.swing.JCheckBox();
         jSpinner4 = new javax.swing.JSpinner();
@@ -171,7 +175,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel53 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
+        item5 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
         jCheckBox5 = new javax.swing.JCheckBox();
         jSpinner5 = new javax.swing.JSpinner();
@@ -180,7 +184,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel60 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
-        jLabel63 = new javax.swing.JLabel();
+        item6 = new javax.swing.JLabel();
         jLabel64 = new javax.swing.JLabel();
         jCheckBox6 = new javax.swing.JCheckBox();
         jSpinner6 = new javax.swing.JSpinner();
@@ -189,7 +193,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel67 = new javax.swing.JLabel();
         jLabel68 = new javax.swing.JLabel();
         jLabel69 = new javax.swing.JLabel();
-        jLabel70 = new javax.swing.JLabel();
+        item7 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
         jCheckBox7 = new javax.swing.JCheckBox();
         jSpinner7 = new javax.swing.JSpinner();
@@ -198,7 +202,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel74 = new javax.swing.JLabel();
         jLabel75 = new javax.swing.JLabel();
         jLabel76 = new javax.swing.JLabel();
-        jLabel77 = new javax.swing.JLabel();
+        item8 = new javax.swing.JLabel();
         jLabel78 = new javax.swing.JLabel();
         jCheckBox8 = new javax.swing.JCheckBox();
         jSpinner8 = new javax.swing.JSpinner();
@@ -207,7 +211,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel81 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
-        jLabel84 = new javax.swing.JLabel();
+        item9 = new javax.swing.JLabel();
         jLabel85 = new javax.swing.JLabel();
         jCheckBox9 = new javax.swing.JCheckBox();
         jSpinner9 = new javax.swing.JSpinner();
@@ -216,7 +220,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel95 = new javax.swing.JLabel();
         jLabel96 = new javax.swing.JLabel();
         jLabel97 = new javax.swing.JLabel();
-        jLabel98 = new javax.swing.JLabel();
+        item11 = new javax.swing.JLabel();
         jLabel99 = new javax.swing.JLabel();
         jCheckBox11 = new javax.swing.JCheckBox();
         jSpinner11 = new javax.swing.JSpinner();
@@ -225,7 +229,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel102 = new javax.swing.JLabel();
         jLabel103 = new javax.swing.JLabel();
         jLabel104 = new javax.swing.JLabel();
-        jLabel105 = new javax.swing.JLabel();
+        item12 = new javax.swing.JLabel();
         jLabel106 = new javax.swing.JLabel();
         jCheckBox12 = new javax.swing.JCheckBox();
         jSpinner12 = new javax.swing.JSpinner();
@@ -234,7 +238,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel109 = new javax.swing.JLabel();
         jLabel110 = new javax.swing.JLabel();
         jLabel111 = new javax.swing.JLabel();
-        jLabel112 = new javax.swing.JLabel();
+        item13 = new javax.swing.JLabel();
         jLabel113 = new javax.swing.JLabel();
         jCheckBox13 = new javax.swing.JCheckBox();
         jSpinner13 = new javax.swing.JSpinner();
@@ -242,7 +246,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel88 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
-        jLabel91 = new javax.swing.JLabel();
+        item10 = new javax.swing.JLabel();
         jLabel92 = new javax.swing.JLabel();
         jCheckBox10 = new javax.swing.JCheckBox();
         jSpinner10 = new javax.swing.JSpinner();
@@ -252,7 +256,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel130 = new javax.swing.JLabel();
         jLabel131 = new javax.swing.JLabel();
         jLabel132 = new javax.swing.JLabel();
-        jLabel133 = new javax.swing.JLabel();
+        item14 = new javax.swing.JLabel();
         jLabel134 = new javax.swing.JLabel();
         jCheckBox14 = new javax.swing.JCheckBox();
         jSpinner14 = new javax.swing.JSpinner();
@@ -261,7 +265,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel137 = new javax.swing.JLabel();
         jLabel138 = new javax.swing.JLabel();
         jLabel139 = new javax.swing.JLabel();
-        jLabel140 = new javax.swing.JLabel();
+        item15 = new javax.swing.JLabel();
         jLabel141 = new javax.swing.JLabel();
         jCheckBox15 = new javax.swing.JCheckBox();
         jSpinner15 = new javax.swing.JSpinner();
@@ -321,8 +325,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel14.setText("Purchase :");
 
-        jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel15.setText("Mineral Water");
+        item1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item1.setText("Mineral Water");
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel16.setText("8 DH");
@@ -356,7 +360,7 @@ public class Menu extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(jLabel15)
+                .addComponent(item1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -364,7 +368,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel15)
+                .addComponent(item1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
@@ -393,8 +397,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel21.setText("Purchase :");
 
-        jLabel22.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel22.setText("Normal Coffe");
+        item2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item2.setText("Normal Coffe");
 
         jLabel23.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel23.setText("10DH");
@@ -418,7 +422,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(38, 38, 38)
-                .addComponent(jLabel22)
+                .addComponent(item2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -426,7 +430,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel22)
+                .addComponent(item2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel19)
@@ -455,8 +459,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel28.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel28.setText("Purchase :");
 
-        jLabel29.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel29.setText("Cold Coffee");
+        item3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item3.setText("Cold Coffee");
 
         jLabel30.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel30.setText("10DH");
@@ -480,7 +484,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(43, 43, 43)
-                .addComponent(jLabel29)
+                .addComponent(item3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -488,7 +492,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel29)
+                .addComponent(item3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel26)
@@ -517,8 +521,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel41.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel41.setText("Purchase :");
 
-        jLabel42.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel42.setText("Cappuccino Coffee");
+        item4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item4.setText("Cappuccino Coffee");
 
         jLabel43.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel43.setText("12DH");
@@ -542,7 +546,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel42)
+                .addComponent(item4)
                 .addGap(25, 25, 25))
         );
         jPanel9Layout.setVerticalGroup(
@@ -550,7 +554,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel42)
+                .addComponent(item4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel39)
@@ -579,8 +583,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel55.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel55.setText("Purchase :");
 
-        jLabel56.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel56.setText("Green Tea");
+        item5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item5.setText("Green Tea");
 
         jLabel57.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel57.setText("10DH");
@@ -604,7 +608,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel56)
+                .addComponent(item5)
                 .addGap(54, 54, 54))
         );
         jPanel11Layout.setVerticalGroup(
@@ -612,7 +616,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel56)
+                .addComponent(item5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel53)
@@ -641,11 +645,17 @@ public class Menu extends javax.swing.JFrame {
         jLabel62.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel62.setText("Purchase :");
 
-        jLabel63.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel63.setText("Coca Cola");
+        item6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item6.setText("Coca Cola");
 
         jLabel64.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel64.setText("12DH");
+
+        jCheckBox6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -666,7 +676,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addGap(58, 58, 58)
-                .addComponent(jLabel63)
+                .addComponent(item6)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
@@ -674,7 +684,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel63)
+                .addComponent(item6)
                 .addGap(12, 12, 12)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel60)
@@ -703,8 +713,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel69.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel69.setText("Purchase :");
 
-        jLabel70.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel70.setText("Orange Juice");
+        item7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item7.setText("Orange Juice");
 
         jLabel71.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel71.setText("12DH");
@@ -728,7 +738,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel70)
+                .addComponent(item7)
                 .addGap(43, 43, 43))
         );
         jPanel13Layout.setVerticalGroup(
@@ -736,7 +746,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel70)
+                .addComponent(item7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel67)
@@ -765,8 +775,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel76.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel76.setText("Purchase :");
 
-        jLabel77.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel77.setText("Hawai");
+        item8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item8.setText("Hawai");
 
         jLabel78.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel78.setText("12DH");
@@ -790,7 +800,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel14Layout.createSequentialGroup()
                 .addGap(63, 63, 63)
-                .addComponent(jLabel77)
+                .addComponent(item8)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel14Layout.setVerticalGroup(
@@ -798,7 +808,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel14Layout.createSequentialGroup()
                 .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel77)
+                .addComponent(item8)
                 .addGap(12, 12, 12)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel74)
@@ -827,8 +837,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel83.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel83.setText("Purchase :");
 
-        jLabel84.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel84.setText("Espresso");
+        item9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item9.setText("Espresso");
 
         jLabel85.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel85.setText("10DH");
@@ -855,7 +865,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(44, 44, 44))
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addGap(61, 61, 61)
-                .addComponent(jLabel84)
+                .addComponent(item9)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel15Layout.setVerticalGroup(
@@ -863,7 +873,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addComponent(jLabel79, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel84)
+                .addComponent(item9)
                 .addGap(12, 12, 12)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel81)
@@ -892,8 +902,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel97.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel97.setText("Purchase :");
 
-        jLabel98.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel98.setText("Half Half Coffee");
+        item11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item11.setText("Half Half Coffee");
 
         jLabel99.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel99.setText("10DH");
@@ -918,7 +928,7 @@ public class Menu extends javax.swing.JFrame {
                                 .addComponent(jLabel99))))
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel98)
+                        .addComponent(item11)
                         .addGap(28, 28, 28)))
                 .addContainerGap())
         );
@@ -927,7 +937,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel17Layout.createSequentialGroup()
                 .addComponent(jLabel93, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel98)
+                .addComponent(item11)
                 .addGap(12, 12, 12)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel95)
@@ -956,8 +966,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel104.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel104.setText("Purchase :");
 
-        jLabel105.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel105.setText("Banana Juice");
+        item12.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item12.setText("Banana Juice");
 
         jLabel106.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel106.setText("12DH");
@@ -983,7 +993,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel18Layout.createSequentialGroup()
                 .addGap(43, 43, 43)
-                .addComponent(jLabel105)
+                .addComponent(item12)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel18Layout.setVerticalGroup(
@@ -991,7 +1001,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel18Layout.createSequentialGroup()
                 .addComponent(jLabel100, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel105)
+                .addComponent(item12)
                 .addGap(12, 12, 12)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel102)
@@ -1020,8 +1030,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel111.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel111.setText("Purchase :");
 
-        jLabel112.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel112.setText("Tiramisu");
+        item13.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item13.setText("Tiramisu");
 
         jLabel113.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel113.setText("15DH");
@@ -1045,7 +1055,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addGap(55, 55, 55)
-                .addComponent(jLabel112)
+                .addComponent(item13)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
@@ -1053,7 +1063,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addComponent(jLabel107, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel112)
+                .addComponent(item13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel109)
@@ -1080,8 +1090,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel90.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel90.setText("Purchase :");
 
-        jLabel91.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel91.setText("Sprite");
+        item10.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item10.setText("Sprite");
 
         jLabel92.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel92.setText("12DH");
@@ -1103,7 +1113,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel16Layout.createSequentialGroup()
                 .addGap(65, 65, 65)
-                .addComponent(jLabel91)
+                .addComponent(item10)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1122,7 +1132,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addComponent(jLabel91)
+                        .addComponent(item10)
                         .addGap(5, 5, 5)
                         .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel88)
@@ -1152,8 +1162,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel132.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel132.setText("Purchase :");
 
-        jLabel133.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel133.setText("Italian Coffee");
+        item14.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item14.setText("Italian Coffee");
 
         jLabel134.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel134.setText("10DH");
@@ -1177,7 +1187,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel133)
+                .addComponent(item14)
                 .addGap(45, 45, 45))
         );
         jPanel22Layout.setVerticalGroup(
@@ -1185,7 +1195,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel22Layout.createSequentialGroup()
                 .addComponent(jLabel128, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel133)
+                .addComponent(item14)
                 .addGap(12, 12, 12)
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel130)
@@ -1213,8 +1223,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel139.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel139.setText("Purchase :");
 
-        jLabel140.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel140.setText("American Coffee");
+        item15.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        item15.setText("American Coffee");
 
         jLabel141.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel141.setText("10DH");
@@ -1241,7 +1251,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
             .addGroup(jPanel23Layout.createSequentialGroup()
                 .addGap(58, 58, 58)
-                .addComponent(jLabel140)
+                .addComponent(item15)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel23Layout.setVerticalGroup(
@@ -1249,7 +1259,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel23Layout.createSequentialGroup()
                 .addComponent(jLabel135, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel140)
+                .addComponent(item15)
                 .addGap(12, 12, 12)
                 .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel137)
@@ -1572,16 +1582,39 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        if(qtyNull()!=1){
+        int qty = Integer.parseInt(jSpinner1.getValue().toString());
+        if(qtyNull()!=-1){
         NN();
+        x++;
+        double price = qty * 8;
+        jTextArea1.setText(jTextArea1.getText()+x+". "+item1.getText()+"\t\t"+price+"\n");
         }
       
     }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox6ActionPerformed
 
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel heure;
+    private javax.swing.JLabel item1;
+    private javax.swing.JLabel item10;
+    private javax.swing.JLabel item11;
+    private javax.swing.JLabel item12;
+    private javax.swing.JLabel item13;
+    private javax.swing.JLabel item14;
+    private javax.swing.JLabel item15;
+    private javax.swing.JLabel item2;
+    private javax.swing.JLabel item3;
+    private javax.swing.JLabel item4;
+    private javax.swing.JLabel item5;
+    private javax.swing.JLabel item6;
+    private javax.swing.JLabel item7;
+    private javax.swing.JLabel item8;
+    private javax.swing.JLabel item9;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -1607,13 +1640,11 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel102;
     private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel104;
-    private javax.swing.JLabel jLabel105;
     private javax.swing.JLabel jLabel106;
     private javax.swing.JLabel jLabel107;
     private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel110;
     private javax.swing.JLabel jLabel111;
-    private javax.swing.JLabel jLabel112;
     private javax.swing.JLabel jLabel113;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel128;
@@ -1621,29 +1652,24 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel130;
     private javax.swing.JLabel jLabel131;
     private javax.swing.JLabel jLabel132;
-    private javax.swing.JLabel jLabel133;
     private javax.swing.JLabel jLabel134;
     private javax.swing.JLabel jLabel135;
     private javax.swing.JLabel jLabel137;
     private javax.swing.JLabel jLabel138;
     private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel140;
     private javax.swing.JLabel jLabel141;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -1653,54 +1679,46 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
     private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
-    private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
     private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel95;
     private javax.swing.JLabel jLabel96;
     private javax.swing.JLabel jLabel97;
-    private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;

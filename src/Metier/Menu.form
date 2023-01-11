@@ -340,7 +340,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                              <Component id="item1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -350,7 +350,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel10" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                              <Component id="item1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -401,7 +401,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel15">
+                    <Component class="javax.swing.JLabel" name="item1">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -462,7 +462,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                              <Component id="item2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -472,7 +472,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel17" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                              <Component id="item2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -523,7 +523,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel22">
+                    <Component class="javax.swing.JLabel" name="item2">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -581,7 +581,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                              <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
+                              <Component id="item3" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -591,7 +591,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel24" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
+                              <Component id="item3" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -642,7 +642,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel29">
+                    <Component class="javax.swing.JLabel" name="item3">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -700,7 +700,7 @@
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
+                              <Component id="item4" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -710,7 +710,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel31" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
+                              <Component id="item4" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel39" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -761,7 +761,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel42">
+                    <Component class="javax.swing.JLabel" name="item4">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -816,7 +816,7 @@
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
+                              <Component id="item5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -826,7 +826,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel51" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
+                              <Component id="item5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel53" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -877,7 +877,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel56">
+                    <Component class="javax.swing.JLabel" name="item5">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -932,7 +932,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                              <Component id="jLabel63" min="-2" max="-2" attributes="0"/>
+                              <Component id="item6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -942,7 +942,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel58" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel63" min="-2" max="-2" attributes="0"/>
+                              <Component id="item6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel60" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -993,7 +993,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel63">
+                    <Component class="javax.swing.JLabel" name="item6">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -1010,6 +1010,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="jCheckBox6">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox6ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner6">
                     </Component>
@@ -1048,7 +1051,7 @@
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="jLabel70" min="-2" max="-2" attributes="0"/>
+                              <Component id="item7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -1058,7 +1061,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel65" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel70" min="-2" max="-2" attributes="0"/>
+                              <Component id="item7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel67" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1109,7 +1112,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel70">
+                    <Component class="javax.swing.JLabel" name="item7">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -1164,7 +1167,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                              <Component id="jLabel77" min="-2" max="-2" attributes="0"/>
+                              <Component id="item8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -1174,7 +1177,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel72" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel77" min="-2" max="-2" attributes="0"/>
+                              <Component id="item8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel74" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1225,7 +1228,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel77">
+                    <Component class="javax.swing.JLabel" name="item8">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -1285,7 +1288,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                              <Component id="jLabel84" min="-2" max="-2" attributes="0"/>
+                              <Component id="item9" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -1295,7 +1298,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel79" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel84" min="-2" max="-2" attributes="0"/>
+                              <Component id="item9" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel81" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1346,7 +1349,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel84">
+                    <Component class="javax.swing.JLabel" name="item9">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -1402,7 +1405,7 @@
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel98" min="-2" max="-2" attributes="0"/>
+                                      <Component id="item11" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -1415,7 +1418,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel93" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel98" min="-2" max="-2" attributes="0"/>
+                              <Component id="item11" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel95" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1466,7 +1469,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel98">
+                    <Component class="javax.swing.JLabel" name="item11">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -1525,7 +1528,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                              <Component id="jLabel105" min="-2" max="-2" attributes="0"/>
+                              <Component id="item12" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -1535,7 +1538,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel100" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel105" min="-2" max="-2" attributes="0"/>
+                              <Component id="item12" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel102" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1586,7 +1589,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel105">
+                    <Component class="javax.swing.JLabel" name="item12">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -1641,7 +1644,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                              <Component id="jLabel112" min="-2" max="-2" attributes="0"/>
+                              <Component id="item13" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -1651,7 +1654,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel107" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel112" min="-2" max="-2" attributes="0"/>
+                              <Component id="item13" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel109" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1702,7 +1705,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel112">
+                    <Component class="javax.swing.JLabel" name="item13">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -1752,7 +1755,7 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                              <Component id="jLabel91" min="-2" max="-2" attributes="0"/>
+                              <Component id="item10" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
@@ -1776,7 +1779,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jLabel91" min="-2" max="-2" attributes="0"/>
+                                      <Component id="item10" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel88" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1825,7 +1828,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel91">
+                    <Component class="javax.swing.JLabel" name="item10">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -1885,7 +1888,7 @@
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="jLabel133" min="-2" max="-2" attributes="0"/>
+                              <Component id="item14" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -1895,7 +1898,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel128" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel133" min="-2" max="-2" attributes="0"/>
+                              <Component id="item14" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel130" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1945,7 +1948,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel133">
+                    <Component class="javax.swing.JLabel" name="item14">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
@@ -2005,7 +2008,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                              <Component id="jLabel140" min="-2" max="-2" attributes="0"/>
+                              <Component id="item15" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -2015,7 +2018,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel135" min="-2" pref="61" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel140" min="-2" max="-2" attributes="0"/>
+                              <Component id="item15" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel137" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -2066,7 +2069,7 @@
                         <Property name="text" type="java.lang.String" value="Purchase :"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel140">
+                    <Component class="javax.swing.JLabel" name="item15">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Times New Roman" size="14" style="1"/>
