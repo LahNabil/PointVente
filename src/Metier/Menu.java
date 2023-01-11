@@ -13,6 +13,7 @@ import java.util.Calendar;
 import java.text.SimpleDateFormat;
 import java.util.Timer;
 import java.util.TimerTask;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -48,6 +49,29 @@ public class Menu extends javax.swing.JFrame {
   
         
     }
+    public void qtyNull(){
+        if(Integer.parseInt(jSpinner1.getValue().toString())==0){
+            JOptionPane.showMessageDialog(null,"Please increase the item quantity");
+            
+        }
+    }
+    public void NN(){
+                 jTextArea1.setText("********************* N&N Cafe ************************\n"
+                
+                + "Heure :"+heure.getText()+"  Date :"+worklbl.getText()+"\n"
+                + "*******************************************************\n "
+                + "Contactez-nous : lahlalia.nabil@hotmail.com  \n "
+                        + "hnizilnouhayla@gmail.com\n"
+                + "*******************************************************");
+                                                                                             
+                                                                    
+                               
+                           
+                          
+                         
+                        
+        
+    }
     public void reset(){
         jSpinner1.setValue(0);
         jSpinner2.setValue(0);
@@ -66,7 +90,8 @@ public class Menu extends javax.swing.JFrame {
         jSpinner13.setValue(0);
         taxTF.setText("0.0");
         subTF.setText("0.0");
-        totalTF.setText("0.0");
+        jTextField3.setText("0.0");
+        jTextArea1.setText("");
         
     }
 
@@ -230,12 +255,14 @@ public class Menu extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jLabel7 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         taxTF = new javax.swing.JTextField();
         subTF = new javax.swing.JTextField();
-        totalTF = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -281,6 +308,12 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel16.setText("8 DH");
+
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -1342,15 +1375,20 @@ public class Menu extends javax.swing.JFrame {
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
         jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(230, 230, 230), 2));
 
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(jScrollPane1)
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 379, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 379, Short.MAX_VALUE)
         );
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -1368,8 +1406,8 @@ public class Menu extends javax.swing.JFrame {
         subTF.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         subTF.setText("0.0");
 
-        totalTF.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        totalTF.setText("0.0");
+        jTextField3.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jTextField3.setText("0.0");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -1386,7 +1424,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(taxTF, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
                     .addComponent(subTF)
-                    .addComponent(totalTF))
+                    .addComponent(jTextField3))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -1407,7 +1445,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel33)
-                    .addComponent(totalTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -1514,6 +1552,11 @@ public class Menu extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         reset();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+      NN();
+      
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
 
    
 
@@ -1660,6 +1703,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner10;
     private javax.swing.JSpinner jSpinner11;
@@ -1675,9 +1719,10 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner7;
     private javax.swing.JSpinner jSpinner8;
     private javax.swing.JSpinner jSpinner9;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField subTF;
     private javax.swing.JTextField taxTF;
-    private javax.swing.JTextField totalTF;
     private javax.swing.JLabel worklbl;
     // End of variables declaration//GEN-END:variables
 }
