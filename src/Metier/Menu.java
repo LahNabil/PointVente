@@ -32,6 +32,7 @@ public class Menu extends javax.swing.JFrame {
     public Timer timer;
     private double total = 0.0;
     private int x = 0;
+    private double tax = 0.0;
     
     
     
@@ -197,13 +198,28 @@ public class Menu extends javax.swing.JFrame {
                 + "*******************************************************\n"
                 + "Item Name :\t\t\t"+"Price(DH)\n");
                                                                                              
-                                                                    
-                               
-                           
-                          
-                         
-                        
+  
         
+    }
+    
+    public void geTax(double t){
+        if(t>=10.0 && t<=20.0){
+            tax = 0.5;
+        }else if(t>20.0 && t<=30.0){
+            tax = 1.0;
+        }else if(t>30.0 && t<=60.0){
+            tax = 2.0;
+        }else if(t>60.0 && t<=80.0){
+            tax = 3.0;
+        }else if(t>80.0 && t<=100.0){
+            tax = 4.0;
+        }else if(t>100.0 && t<=150.0){
+            tax = 8.0;
+        }else if(t>150.0 && t<=200.0){
+            tax = 10.0;
+        }else if(t>200.0){
+            tax = 15.0;
+        }
     }
     public void reset(){
         jSpinner1.setValue(0);
@@ -223,7 +239,7 @@ public class Menu extends javax.swing.JFrame {
         jSpinner13.setValue(0);
         taxTF.setText("0.0");
         subTF.setText("0.0");
-        jTextField3.setText("0.0");
+        totalTF.setText("0.0");
         jTextArea1.setText("");
         jCheckBox1.setSelected(false);
         jCheckBox2.setSelected(false);
@@ -411,7 +427,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         taxTF = new javax.swing.JTextField();
         subTF = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        totalTF = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -1577,6 +1593,11 @@ public class Menu extends javax.swing.JFrame {
         jButton4.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Total");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -1644,8 +1665,8 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        jTextField3.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jTextField3.setText("0.0");
+        totalTF.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        totalTF.setText("0.0");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -1662,7 +1683,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(taxTF, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
                     .addComponent(subTF)
-                    .addComponent(jTextField3))
+                    .addComponent(totalTF))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -1683,7 +1704,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel33)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(totalTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -1801,6 +1822,8 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 8;
         total += price;
+        geTax(total);
+        
         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item1.getText()+"\t\t"+price+"\n");
         }else {
@@ -1819,6 +1842,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 12;
         total +=price;
+        geTax(total);
         subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item6.getText()+"\t\t\t"+price+"\n");
         }else {
@@ -1837,6 +1861,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 10;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item2.getText()+"\t\t"+price+"\n");
         }else {
@@ -1854,6 +1879,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 10;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item3.getText()+"\t\t\t"+price+"\n");
         }else {
@@ -1871,6 +1897,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 12;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item4.getText()+"\t\t"+price+"\n");
         }else {
@@ -1888,6 +1915,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 10;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item5.getText()+"\t\t\t"+price+"\n");
         }else {
@@ -1905,6 +1933,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 12;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item7.getText()+"\t\t\t"+price+"\n");
         }else {
@@ -1922,6 +1951,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 12;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item8.getText()+"\t\t\t"+price+"\n");
         }else {
@@ -1939,6 +1969,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 10;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item9.getText()+"\t\t\t"+price+"\n");
         }else {
@@ -1956,6 +1987,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 12;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item10.getText()+"\t\t\t"+price+"\n");
         }else {
@@ -1973,6 +2005,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 10;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item11.getText()+"\t\t"+price+"\n");
         }else {
@@ -1990,6 +2023,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 12;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item12.getText()+"\t\t"+price+"\n");
         }else {
@@ -2007,6 +2041,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 15;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item13.getText()+"\t\t\t"+price+"\n");
         }else {
@@ -2024,6 +2059,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 10;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item14.getText()+"\t\t"+price+"\n");
         }else {
@@ -2041,6 +2077,7 @@ public class Menu extends javax.swing.JFrame {
         }
         double price = qty * 10;
          total +=price;
+         geTax(total);
          subTF.setText(Double.toString(total));
         jTextArea1.setText(jTextArea1.getText()+x+". "+item15.getText()+"\t\t"+price+"\n");
         }else {
@@ -2051,6 +2088,22 @@ public class Menu extends javax.swing.JFrame {
     private void subTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subTFActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_subTFActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        if(total == 0.0){
+            JOptionPane.showMessageDialog(null,"Please select atleast one Item");
+        }else {
+            jTextArea1.setText(jTextArea1.getText()
+                    +"*******************************************************\n "
+                    +"Tax : \t\t"+tax+"\n"
+                    +"Sub Total :\t\t"+total+"\n"
+                    +"Total : \t\t"+(total+tax)+"\n\n"
+                    +"*******************************************************"
+                    );
+        }
+        taxTF.setText(Double.toString(tax));
+        totalTF.setText(Double.toString(total+tax));
+    }//GEN-LAST:event_jButton4ActionPerformed
 
    
 
@@ -2214,9 +2267,9 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner8;
     private javax.swing.JSpinner jSpinner9;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField subTF;
     private javax.swing.JTextField taxTF;
+    private javax.swing.JTextField totalTF;
     private javax.swing.JLabel worklbl;
     // End of variables declaration//GEN-END:variables
 }
