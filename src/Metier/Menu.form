@@ -694,7 +694,7 @@
                                       <Component id="jSpinner4" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                       <Component id="jLabel43" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jCheckBox5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox4" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -724,7 +724,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel41" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox5" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox4" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="43" max="32767" attributes="0"/>
                           </Group>
@@ -777,7 +777,7 @@
                         <Property name="text" type="java.lang.String" value="12DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox5">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox4">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner4">
                     </Component>
@@ -806,7 +806,7 @@
                               </Group>
                               <EmptySpace type="separate" pref="50" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jCheckBox7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox5" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                       <Component id="jSpinner5" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                       <Component id="jLabel57" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -840,7 +840,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel55" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox7" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox5" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="43" max="32767" attributes="0"/>
                           </Group>
@@ -893,7 +893,7 @@
                         <Property name="text" type="java.lang.String" value="10DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox7">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox5">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner5">
                     </Component>
@@ -922,7 +922,7 @@
                               </Group>
                               <EmptySpace type="separate" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jCheckBox8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox6" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                       <Component id="jSpinner6" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                       <Component id="jLabel64" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -956,7 +956,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel62" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox8" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox6" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="28" max="32767" attributes="0"/>
                           </Group>
@@ -1009,7 +1009,7 @@
                         <Property name="text" type="java.lang.String" value="12DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox8">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox6">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner6">
                     </Component>
@@ -1038,7 +1038,7 @@
                               </Group>
                               <EmptySpace type="separate" pref="47" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jCheckBox9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox7" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                       <Component id="jSpinner7" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                       <Component id="jLabel71" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1072,7 +1072,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel69" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox9" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox7" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="28" max="32767" attributes="0"/>
                           </Group>
@@ -1125,7 +1125,7 @@
                         <Property name="text" type="java.lang.String" value="12DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox9">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox7">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner7">
                     </Component>
@@ -1154,7 +1154,7 @@
                               </Group>
                               <EmptySpace type="separate" pref="48" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jCheckBox10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox8" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                       <Component id="jSpinner8" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                       <Component id="jLabel78" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1188,7 +1188,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel76" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox10" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox8" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="28" max="32767" attributes="0"/>
                           </Group>
@@ -1241,7 +1241,7 @@
                         <Property name="text" type="java.lang.String" value="12DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox10">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox8">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner8">
                     </Component>
@@ -1272,7 +1272,7 @@
                                       </Group>
                                       <EmptySpace type="separate" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jCheckBox11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox9" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                               <Component id="jSpinner9" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                               <Component id="jLabel85" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1309,7 +1309,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel83" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox11" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox9" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="28" max="32767" attributes="0"/>
                           </Group>
@@ -1362,7 +1362,7 @@
                         <Property name="text" type="java.lang.String" value="10DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox11">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox9">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner9">
                     </Component>
@@ -1393,7 +1393,7 @@
                                       </Group>
                                       <EmptySpace type="separate" pref="50" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jCheckBox13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox11" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                               <Component id="jSpinner11" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                               <Component id="jLabel99" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1429,7 +1429,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel97" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox13" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox11" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                           </Group>
@@ -1482,7 +1482,7 @@
                         <Property name="text" type="java.lang.String" value="10DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox13">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox11">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner11">
                     </Component>
@@ -1512,7 +1512,7 @@
                                       </Group>
                                       <EmptySpace type="separate" pref="47" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jCheckBox14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox12" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                               <Component id="jSpinner12" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                               <Component id="jLabel106" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1549,7 +1549,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel104" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox14" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox12" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                           </Group>
@@ -1602,7 +1602,7 @@
                         <Property name="text" type="java.lang.String" value="12DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox14">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox12">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner12">
                     </Component>
@@ -1631,7 +1631,7 @@
                               </Group>
                               <EmptySpace type="separate" pref="48" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jCheckBox15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox13" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                       <Component id="jSpinner13" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                       <Component id="jLabel113" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1665,7 +1665,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel111" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox15" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox13" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="10" max="32767" attributes="0"/>
                           </Group>
@@ -1718,7 +1718,7 @@
                         <Property name="text" type="java.lang.String" value="15DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox15">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox13">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner13">
                     </Component>
@@ -1743,7 +1743,7 @@
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel90" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox12" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCheckBox10" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel86" max="32767" attributes="0"/>
@@ -1792,7 +1792,7 @@
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="jCheckBox12" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCheckBox10" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
@@ -1841,7 +1841,7 @@
                         <Property name="text" type="java.lang.String" value="12DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox12">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox10">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner10">
                     </Component>
@@ -1875,7 +1875,7 @@
                               </Group>
                               <EmptySpace type="separate" pref="54" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jCheckBox18" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox14" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                       <Component id="jSpinner14" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                       <Component id="jLabel134" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1909,7 +1909,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel132" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox18" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox14" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -1961,7 +1961,7 @@
                         <Property name="text" type="java.lang.String" value="10DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox18">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox14">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner14">
                     </Component>
@@ -1992,7 +1992,7 @@
                                       </Group>
                                       <EmptySpace type="separate" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jCheckBox19" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox15" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                                               <Component id="jSpinner15" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                               <Component id="jLabel141" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -2029,7 +2029,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="jLabel139" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox19" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox15" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
@@ -2082,7 +2082,7 @@
                         <Property name="text" type="java.lang.String" value="10DH"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JCheckBox" name="jCheckBox19">
+                    <Component class="javax.swing.JCheckBox" name="jCheckBox15">
                     </Component>
                     <Component class="javax.swing.JSpinner" name="jSpinner15">
                     </Component>

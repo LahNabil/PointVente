@@ -49,11 +49,14 @@ public class Menu extends javax.swing.JFrame {
   
         
     }
-    public void qtyNull(){
+    public int qtyNull(){
+        int c = 0;
         if(Integer.parseInt(jSpinner1.getValue().toString())==0){
             JOptionPane.showMessageDialog(null,"Please increase the item quantity");
-            
+            jCheckBox1.setSelected(false);
+            c =1;
         }
+        return c;
     }
     public void NN(){
                  jTextArea1.setText("********************* N&N Cafe ************************\n"
@@ -92,6 +95,21 @@ public class Menu extends javax.swing.JFrame {
         subTF.setText("0.0");
         jTextField3.setText("0.0");
         jTextArea1.setText("");
+        jCheckBox1.setSelected(false);
+        jCheckBox2.setSelected(false);
+        jCheckBox3.setSelected(false);
+        jCheckBox4.setSelected(false);
+        jCheckBox5.setSelected(false);
+        jCheckBox6.setSelected(false);
+        jCheckBox7.setSelected(false);
+        jCheckBox8.setSelected(false);
+        jCheckBox9.setSelected(false);
+        jCheckBox10.setSelected(false);
+        jCheckBox11.setSelected(false);
+        jCheckBox12.setSelected(false);
+        jCheckBox13.setSelected(false);
+        jCheckBox14.setSelected(false);
+        jCheckBox15.setSelected(false);
         
     }
 
@@ -146,7 +164,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
-        jCheckBox5 = new javax.swing.JCheckBox();
+        jCheckBox4 = new javax.swing.JCheckBox();
         jSpinner4 = new javax.swing.JSpinner();
         jPanel11 = new javax.swing.JPanel();
         jLabel51 = new javax.swing.JLabel();
@@ -155,7 +173,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel55 = new javax.swing.JLabel();
         jLabel56 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
-        jCheckBox7 = new javax.swing.JCheckBox();
+        jCheckBox5 = new javax.swing.JCheckBox();
         jSpinner5 = new javax.swing.JSpinner();
         jPanel12 = new javax.swing.JPanel();
         jLabel58 = new javax.swing.JLabel();
@@ -164,7 +182,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel62 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
         jLabel64 = new javax.swing.JLabel();
-        jCheckBox8 = new javax.swing.JCheckBox();
+        jCheckBox6 = new javax.swing.JCheckBox();
         jSpinner6 = new javax.swing.JSpinner();
         jPanel13 = new javax.swing.JPanel();
         jLabel65 = new javax.swing.JLabel();
@@ -173,7 +191,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel69 = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
-        jCheckBox9 = new javax.swing.JCheckBox();
+        jCheckBox7 = new javax.swing.JCheckBox();
         jSpinner7 = new javax.swing.JSpinner();
         jPanel14 = new javax.swing.JPanel();
         jLabel72 = new javax.swing.JLabel();
@@ -182,7 +200,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel76 = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
         jLabel78 = new javax.swing.JLabel();
-        jCheckBox10 = new javax.swing.JCheckBox();
+        jCheckBox8 = new javax.swing.JCheckBox();
         jSpinner8 = new javax.swing.JSpinner();
         jPanel15 = new javax.swing.JPanel();
         jLabel79 = new javax.swing.JLabel();
@@ -191,7 +209,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel83 = new javax.swing.JLabel();
         jLabel84 = new javax.swing.JLabel();
         jLabel85 = new javax.swing.JLabel();
-        jCheckBox11 = new javax.swing.JCheckBox();
+        jCheckBox9 = new javax.swing.JCheckBox();
         jSpinner9 = new javax.swing.JSpinner();
         jPanel17 = new javax.swing.JPanel();
         jLabel93 = new javax.swing.JLabel();
@@ -200,7 +218,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel97 = new javax.swing.JLabel();
         jLabel98 = new javax.swing.JLabel();
         jLabel99 = new javax.swing.JLabel();
-        jCheckBox13 = new javax.swing.JCheckBox();
+        jCheckBox11 = new javax.swing.JCheckBox();
         jSpinner11 = new javax.swing.JSpinner();
         jPanel18 = new javax.swing.JPanel();
         jLabel100 = new javax.swing.JLabel();
@@ -209,7 +227,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel104 = new javax.swing.JLabel();
         jLabel105 = new javax.swing.JLabel();
         jLabel106 = new javax.swing.JLabel();
-        jCheckBox14 = new javax.swing.JCheckBox();
+        jCheckBox12 = new javax.swing.JCheckBox();
         jSpinner12 = new javax.swing.JSpinner();
         jPanel19 = new javax.swing.JPanel();
         jLabel107 = new javax.swing.JLabel();
@@ -218,7 +236,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel111 = new javax.swing.JLabel();
         jLabel112 = new javax.swing.JLabel();
         jLabel113 = new javax.swing.JLabel();
-        jCheckBox15 = new javax.swing.JCheckBox();
+        jCheckBox13 = new javax.swing.JCheckBox();
         jSpinner13 = new javax.swing.JSpinner();
         jPanel16 = new javax.swing.JPanel();
         jLabel88 = new javax.swing.JLabel();
@@ -226,7 +244,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel90 = new javax.swing.JLabel();
         jLabel91 = new javax.swing.JLabel();
         jLabel92 = new javax.swing.JLabel();
-        jCheckBox12 = new javax.swing.JCheckBox();
+        jCheckBox10 = new javax.swing.JCheckBox();
         jSpinner10 = new javax.swing.JSpinner();
         jLabel86 = new javax.swing.JLabel();
         jPanel22 = new javax.swing.JPanel();
@@ -236,7 +254,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel132 = new javax.swing.JLabel();
         jLabel133 = new javax.swing.JLabel();
         jLabel134 = new javax.swing.JLabel();
-        jCheckBox18 = new javax.swing.JCheckBox();
+        jCheckBox14 = new javax.swing.JCheckBox();
         jSpinner14 = new javax.swing.JSpinner();
         jPanel23 = new javax.swing.JPanel();
         jLabel135 = new javax.swing.JLabel();
@@ -245,7 +263,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel139 = new javax.swing.JLabel();
         jLabel140 = new javax.swing.JLabel();
         jLabel141 = new javax.swing.JLabel();
-        jCheckBox19 = new javax.swing.JCheckBox();
+        jCheckBox15 = new javax.swing.JCheckBox();
         jSpinner15 = new javax.swing.JSpinner();
         heure = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
@@ -520,7 +538,7 @@ public class Menu extends javax.swing.JFrame {
                     .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jSpinner4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel43))
-                    .addComponent(jCheckBox5))
+                    .addComponent(jCheckBox4))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -544,7 +562,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel41)
-                    .addComponent(jCheckBox5))
+                    .addComponent(jCheckBox4))
                 .addGap(0, 43, Short.MAX_VALUE))
         );
 
@@ -579,7 +597,7 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(jLabel55))
                 .addGap(18, 50, Short.MAX_VALUE)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox7)
+                    .addComponent(jCheckBox5)
                     .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jSpinner5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel57)))
@@ -606,7 +624,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel55)
-                    .addComponent(jCheckBox7))
+                    .addComponent(jCheckBox5))
                 .addGap(0, 43, Short.MAX_VALUE))
         );
 
@@ -641,7 +659,7 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(jLabel62))
                 .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox8)
+                    .addComponent(jCheckBox6)
                     .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jSpinner6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel64)))
@@ -668,7 +686,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel62)
-                    .addComponent(jCheckBox8))
+                    .addComponent(jCheckBox6))
                 .addGap(0, 28, Short.MAX_VALUE))
         );
 
@@ -703,7 +721,7 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(jLabel69))
                 .addGap(18, 47, Short.MAX_VALUE)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox9)
+                    .addComponent(jCheckBox7)
                     .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jSpinner7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel71)))
@@ -730,7 +748,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel69)
-                    .addComponent(jCheckBox9))
+                    .addComponent(jCheckBox7))
                 .addGap(0, 28, Short.MAX_VALUE))
         );
 
@@ -765,7 +783,7 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(jLabel76))
                 .addGap(18, 48, Short.MAX_VALUE)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox10)
+                    .addComponent(jCheckBox8)
                     .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jSpinner8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel78)))
@@ -792,7 +810,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel76)
-                    .addComponent(jCheckBox10))
+                    .addComponent(jCheckBox8))
                 .addGap(0, 28, Short.MAX_VALUE))
         );
 
@@ -829,7 +847,7 @@ public class Menu extends javax.swing.JFrame {
                             .addComponent(jLabel83))
                         .addGap(18, 18, Short.MAX_VALUE)
                         .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox11)
+                            .addComponent(jCheckBox9)
                             .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jSpinner9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel85)))
@@ -857,7 +875,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel83)
-                    .addComponent(jCheckBox11))
+                    .addComponent(jCheckBox9))
                 .addGap(0, 28, Short.MAX_VALUE))
         );
 
@@ -894,7 +912,7 @@ public class Menu extends javax.swing.JFrame {
                             .addComponent(jLabel97))
                         .addGap(18, 50, Short.MAX_VALUE)
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox13)
+                            .addComponent(jCheckBox11)
                             .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jSpinner11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel99))))
@@ -921,7 +939,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel97)
-                    .addComponent(jCheckBox13))
+                    .addComponent(jCheckBox11))
                 .addGap(0, 10, Short.MAX_VALUE))
         );
 
@@ -957,7 +975,7 @@ public class Menu extends javax.swing.JFrame {
                             .addComponent(jLabel104))
                         .addGap(18, 47, Short.MAX_VALUE)
                         .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox14)
+                            .addComponent(jCheckBox12)
                             .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jSpinner12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel106))))
@@ -985,7 +1003,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel104)
-                    .addComponent(jCheckBox14))
+                    .addComponent(jCheckBox12))
                 .addGap(0, 10, Short.MAX_VALUE))
         );
 
@@ -1020,7 +1038,7 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(jLabel111))
                 .addGap(18, 48, Short.MAX_VALUE)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox15)
+                    .addComponent(jCheckBox13)
                     .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jSpinner13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel113)))
@@ -1047,7 +1065,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel111)
-                    .addComponent(jCheckBox15))
+                    .addComponent(jCheckBox13))
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
@@ -1079,7 +1097,7 @@ public class Menu extends javax.swing.JFrame {
                     .addGroup(jPanel16Layout.createSequentialGroup()
                         .addComponent(jLabel90)
                         .addGap(37, 37, 37)
-                        .addComponent(jCheckBox12)
+                        .addComponent(jCheckBox10)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jLabel86, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -1117,7 +1135,7 @@ public class Menu extends javax.swing.JFrame {
                         .addComponent(jLabel90))
                     .addGroup(jPanel16Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jCheckBox12)))
+                        .addComponent(jCheckBox10)))
                 .addGap(25, 25, 25))
         );
 
@@ -1152,7 +1170,7 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(jLabel132))
                 .addGap(18, 54, Short.MAX_VALUE)
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox18)
+                    .addComponent(jCheckBox14)
                     .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jSpinner14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel134)))
@@ -1179,7 +1197,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel132)
-                    .addComponent(jCheckBox18)))
+                    .addComponent(jCheckBox14)))
         );
 
         jPanel23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(230, 230, 230)));
@@ -1215,7 +1233,7 @@ public class Menu extends javax.swing.JFrame {
                             .addComponent(jLabel139))
                         .addGap(18, 18, Short.MAX_VALUE)
                         .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox19)
+                            .addComponent(jCheckBox15)
                             .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jSpinner15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel141)))
@@ -1243,7 +1261,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel139)
-                    .addComponent(jCheckBox19))
+                    .addComponent(jCheckBox15))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -1554,7 +1572,9 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-      NN();
+        if(qtyNull()!=1){
+        NN();
+        }
       
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
@@ -1573,11 +1593,11 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox13;
     private javax.swing.JCheckBox jCheckBox14;
     private javax.swing.JCheckBox jCheckBox15;
-    private javax.swing.JCheckBox jCheckBox18;
-    private javax.swing.JCheckBox jCheckBox19;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JCheckBox jCheckBox5;
+    private javax.swing.JCheckBox jCheckBox6;
     private javax.swing.JCheckBox jCheckBox7;
     private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JCheckBox jCheckBox9;
