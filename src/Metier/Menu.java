@@ -6,6 +6,7 @@ package Metier;
 import Modele.TimeLabel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.print.PrinterException;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -13,6 +14,8 @@ import java.util.Calendar;
 import java.text.SimpleDateFormat;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -1596,6 +1599,11 @@ public class Menu extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jButton3.setText("Imprimer");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setBackground(new java.awt.Color(0, 0, 204));
         jButton4.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
@@ -2114,6 +2122,18 @@ public class Menu extends javax.swing.JFrame {
         totalTF.setText(Double.toString(total+tax));
         jButton4.setEnabled(false);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        if(total == 0 || jButton4.isEnabled()){
+            JOptionPane.showMessageDialog(null, "choose atleast one item");
+        }else{
+            try {
+                jTextArea1.print();
+            } catch (PrinterException ex) {
+                Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
 
    
 
