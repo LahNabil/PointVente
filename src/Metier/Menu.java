@@ -36,9 +36,10 @@ public class Menu extends javax.swing.JFrame {
     
     
     
+    
     public Menu() {
         initComponents();
-        
+        jLabel6.setText("2");
         worklbl.setText(dateStr);
         timeFormat = new SimpleDateFormat("HH:mm:ss");
         heure.setText(timeFormat.format(Calendar.getInstance().getTime()));
@@ -222,6 +223,13 @@ public class Menu extends javax.swing.JFrame {
         }
     }
     public void reset(){
+        totalTF.setText("0.0");
+        taxTF.setText("0.0");
+        subTF.setText("0.0");
+        total = 0.0;
+        x = 0;
+        tax = 0.0;
+        jButton4.setEnabled(true);
         jSpinner1.setValue(0);
         jSpinner2.setValue(0);
         jSpinner3.setValue(0);
@@ -2093,16 +2101,18 @@ public class Menu extends javax.swing.JFrame {
         if(total == 0.0){
             JOptionPane.showMessageDialog(null,"Please select atleast one Item");
         }else {
+            
             jTextArea1.setText(jTextArea1.getText()
-                    +"\n\n\n*******************************************************\n "
+                    +"\n\n\n*******************************************************\n"
                     +"Tax : \t\t"+tax+"\n"
                     +"Sub Total :\t\t"+total+"\n"
                     +"Total : \t\t"+(total+tax)+"\n\n"
-                    +"*******************************************************"
+                    +"**********************THANK YOU*********************"
                     );
         }
         taxTF.setText(Double.toString(tax));
         totalTF.setText(Double.toString(total+tax));
+        jButton4.setEnabled(false);
     }//GEN-LAST:event_jButton4ActionPerformed
 
    
