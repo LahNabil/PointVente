@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
  */
 public class Authentification extends javax.swing.JFrame {
 BDconnexion cnx = new BDconnexion();
-
+Menu menu = new Menu();
    
     public Authentification() {
         initComponents();
@@ -115,6 +115,10 @@ BDconnexion cnx = new BDconnexion();
         if(rs.next()){
             JOptionPane.showMessageDialog(null,"connexion avec succés!");
             this.setVisible(false);
+            menu.setVisible(true);
+            
+            
+            menu.setTitle("Menu");
             
             
         }else{
