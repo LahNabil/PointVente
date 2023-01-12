@@ -17,6 +17,7 @@ import javax.swing.JOptionPane;
  */
 public class Authentification extends javax.swing.JFrame {
 BDconnexion cnx = new BDconnexion();
+
    
     public Authentification() {
         initComponents();
@@ -113,6 +114,9 @@ BDconnexion cnx = new BDconnexion();
         ResultSet rs = stm.executeQuery(sql);
         if(rs.next()){
             JOptionPane.showMessageDialog(null,"connexion avec succés!");
+            this.setVisible(false);
+            
+            
         }else{
             JOptionPane.showMessageDialog(null,"login ou mdp incorrect!");
         }
